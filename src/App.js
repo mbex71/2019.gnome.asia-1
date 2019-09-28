@@ -22,6 +22,7 @@ import {
   ,Switch,Route,Redirect
 } from 'react-router-dom';
 import { connect } from 'react-redux';
+import Coc from './Containers/Coc';
 
 const Dashboard = React.lazy(()=>import('./Containers/Dashboard'));
 const Login = React.lazy(()=>import('./Containers/Login'));
@@ -108,6 +109,7 @@ class App extends React.Component {
        <div className="App">
        <Switch>
         <Route path="/" exact component={content} />
+        <Route path="/code-of-conduct" exact component={Coc} />
         <Registrationroute islogin={this.props.islogin} path="/registration" component={Registration} />
         <LoginRoute islogin={this.props.islogin} path="/login" component={Login}/>
         <Dashboardroute  islogin={this.props.islogin} path="/dashboard" component={Dashboard} />

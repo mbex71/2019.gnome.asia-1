@@ -73,6 +73,7 @@ class Navigation extends React.Component{
                             <NavItem><Link to="#sponsor" 
                             onClick={this._closed}
                             className="nav-link menu-top p-3">Sponsor</Link></NavItem>
+                            <NavItem><Link className="nav-link menu-top p-3" to="code-of-conduct">Code of Conduct</Link></NavItem>
                             <NavItem><Link to="/registration" 
                             onClick={this._closed}
                             className="nav-link menu-top p-3">Registration</Link></NavItem>
